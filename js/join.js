@@ -99,3 +99,7 @@ ${gertId}
     event.target.reset();
 
 }
+
+document
+    .getElementById("joinForm")
+    .addEventListener("submit", window.join);
