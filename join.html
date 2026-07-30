@@ -111,35 +111,7 @@ button:hover{
 
 </div>
 
-<script>
-
-let members = localStorage.getItem("gertMembers");
-
-if(members===null){
-    members=17;
-}else{
-    members=Number(members);
-}
-
-document.getElementById("count").textContent=members;
-
-function join(e){
-
-e.preventDefault();
-
-members++;
-
-localStorage.setItem("gertMembers",members);
-
-document.getElementById("count").textContent=members;
-
-document.getElementById("msg").textContent=
-"Заявка принята. Добро пожаловать в GERT.";
-
-}
-
-</script>
-
+<script type="module" src="js/join.js"></script>
+    
 </body>
-
-</html>
+</html>   
