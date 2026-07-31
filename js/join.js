@@ -56,7 +56,7 @@ window.join = async function(event){
   const statsRef = doc(db, "members", "stats");
     const statsSnap = await getDoc(statsRef);
 
-    let count = 17;
+    let count = 0;
 
     if (statsSnap.exists()) {
         count = statsSnap.data().count;
