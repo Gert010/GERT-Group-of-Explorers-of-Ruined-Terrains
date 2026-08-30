@@ -103,3 +103,5 @@ ${gertId}
 document
     .getElementById("joinForm")
     .addEventListener("submit", window.join);
+    
+    console.log("GERT JOIN JS ЗАГРУЖЕН");
